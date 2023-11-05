@@ -19,6 +19,7 @@ repos:
 
       # Scan cloud infrastructure configurations to find misconfigurations
       - id: terraform_checkov
+        permissions: read-all
 
       # Create README file documentation.
       - id: terraform_docs
