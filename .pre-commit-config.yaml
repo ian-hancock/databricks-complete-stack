@@ -20,7 +20,7 @@ repos:
       # Scan cloud infrastructure configurations to find misconfigurations
       - id: terraform_checkov
         args:
-          - '--args=--skip-check CKV_GA_1'
+          - '--args=--skip-check CKV2_GHA_1'
 
       # Create README file documentation.
       - id: terraform_docs
