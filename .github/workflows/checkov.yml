@@ -12,8 +12,21 @@ jobs:
         uses: actions/setup-python@v4
         with:
           python-version: 3.8
-      - name: Test with Checkov
+      - name: Test Application
         id: checkov
         uses: bridgecrewio/checkov-action@master
         with:
+          directory: application/
+          framework: terraform 
+        - name: Test Cluster Module
+        id: checkov
+        uses: bridgecrewio/checkov-action@master
+        with:
+          directory: modules/cluster
+          framework: terraform 
+        - name: Test Job Module
+        id: checkov
+        uses: bridgecrewio/checkov-action@master
+        with:
+          directory: modules/job
           framework: terraform 
