@@ -15,6 +15,3 @@ jobs:
       - name: Test Application
         id: checkov
         uses: bridgecrewio/checkov-action@master
-        with:
-          directory: application/
-          framework: terraform 
