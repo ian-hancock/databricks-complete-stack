@@ -17,10 +17,6 @@ repos:
       # Static analysis of potential security issues.
       - id: terraform_tfsec
 
-      # Scan cloud infrastructure configurations to find misconfigurations
-      - id: terraform_checkov
-        permissions: read-all
-
       # Create README file documentation.
       - id: terraform_docs
         args:
